@@ -8,4 +8,4 @@ build
 *.log
 .vscode
 .DS_Store
-"@ | Out-File -Encoding utf8 .gitignore
+"@ | Out-File -Encoding utf8 .gitignore*.tsbuildinfo
