@@ -1,0 +1,13 @@
+services:
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: successhub
+      POSTGRES_USER: successhub
+      POSTGRES_PASSWORD: successhub_dev_only
+    ports:
+      - "5432:5432"
+    volumes:
+      - successhub_pg:/var/lib/postgresql/data
+volumes:
+  successhub_pg:
